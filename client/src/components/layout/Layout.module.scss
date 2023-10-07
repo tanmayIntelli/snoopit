@@ -1,0 +1,74 @@
+.container {
+  align-items: center;
+  background-image: url("../../images/books.jpeg");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+}
+h2::before {
+  margin: 0 2px 10px 5px;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+}
+h2::after {
+  margin: 0 2px 10px 5px;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+}
+.loadMore {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  align-items: center;
+}
+.section_popular_recent {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 2rem;
+  width: 80vw;
+}
+
+@media (max-width: 820px) {
+  /* for md and below screens */
+  .section_popular_recent {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h2::before {
+    width: 0.5rem;
+  }
+
+  h2::after {
+    width: 0.5rem;
+  }
+}
+.link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  word-spacing: 2px;
+  border: 2px solid rgb(27, 27, 27);
+  padding: 5px 10px;
+  background-color: #c44040;
+  border-radius: 8px;
+}
+
+.link:hover {
+  background-color: transparent;
+  border: 2px solid rgb(55, 179, 179);
+}

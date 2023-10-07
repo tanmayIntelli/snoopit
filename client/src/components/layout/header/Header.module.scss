@@ -1,0 +1,16 @@
+.toolbar {
+  min-height: 50px ;
+  max-height: 50px;
+}
+.navItems {
+  position: absolute;
+  right: 0;
+}
+.active  { 
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem !important;
+  font-weight: bold !important;
+}
+.logo {
+ height: 4rem;
+}

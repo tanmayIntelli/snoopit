@@ -1,0 +1,34 @@
+.shimmer-article {
+    height: 100vh;
+
+    background: linear-gradient(90deg, #f6f6f6 25%, #fffdfd 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .shimmer-title{
+    background-color: rgb(228, 228, 228);
+    margin-top: 20px;
+    width: 56vw;
+    height: 10vh;
+  }
+
+  .shimmer-text{
+    background-color: rgb(228, 228, 228);
+    margin-top: 20px;
+    width: 56vw;
+    height: 100vh;
+  }

@@ -1,0 +1,10 @@
+.cardWrapper {
+  max-width: 90% !important;
+  border: 1px solid rgba(13, 142, 138, 0.94);
+}
+@media (min-width: 820px) {
+  /* for md and above screens */
+  .cardWrapper{
+    max-width: 60% !important;;
+  }
+}

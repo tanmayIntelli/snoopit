@@ -1,0 +1,40 @@
+.shimmer-postcard-parent{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+    padding: 20px;
+    margin: 10px;
+    background: linear-gradient(90deg, #959595 25%, #474747 50%, #959595 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+  
+
+  .shimmer-card-img{
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(90deg, #d1d1d1 25%, #a6a6a6 50%, #fff7f7 75%);
+    background-size: 200% 100%;
+
+  }
+  .shimmer-card-text{
+    margin-top: 5px;
+    height: 30%;
+    width: 100%;
+    background:linear-gradient(90deg, #d1d1d1 25%, #a6a6a6 50%, #fff7f7 75%);
+    background-size: 200% 100%;
+   
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
